@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Portfolio Website</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://kit.fontawesome.com/63f412d40e.js" crossorigin="anonymous"></script>
+<style>
+   body {
+      background-color: #edf2fc;
+   }
+   body.dark-theme{
+      background-color: #000106;
+   }
+</style>
+</head>
+<body>
+   <div class="hero">
+      <nav>
+         <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">PORTFOLIO</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">HIRE ME</a></li>
+         </ul>
+         <img src="moon.png" id="icon">
+      </nav>
+
+      <div class="info">
+         <h1>I am <span>Oluwatobi</span><br> Adewoye</h1>
+         <p>This is my official portfolio Website to showcase my all works related to web<br>development and UI design</p>
+         <a href="">Download CV</a>
+      </div>
+
+      <div class="img-box">
+         <img src="pattern.jpg" class="back-img">
+         <img src="IMG_7972.PNG" class="main-img">
+      </div>
+
+      <div class="social-links">
+         <a href=""><i class="fab fa-instagram"></i></a>
+         <a href=""><i class="fab fa-twitter"></i></a>
+         <a href=""><i class="fab fa-facebook-square"></i></a>
+      </div>
+   </div>
+
+   <script>
+
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function(){
+         document.body.classList.toggle("dark-theme");
+         if(document.body.classList.contains("dark-theme")){
+            icon.src = "sun.jpg";
+         }else{
+            icon.src = "moon.png";
+         }
+      }
+   </script>
+
+
+</body>
+</html>
